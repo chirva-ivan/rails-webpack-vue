@@ -7,15 +7,15 @@
 
 <script>
   export default {
-    data() {
+    data () {
       return {
-        message: "Welcome1!"
+        message: 'Welcome!'
       }
     }
   }
 </script>
 
-<style scoped>
+<style lang="scss">
   p {
     font-size: 2em;
     text-align: center;
