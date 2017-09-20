@@ -1,23 +1,11 @@
 <template>
-  <div id='app'>
-    <p>{{ message }}</p>
-    <p>{{ message }}</p>
-  </div>
+<div id='app'>
+  <router-view></router-view>
+</div>
 </template>
 
 <script>
-  export default {
-    data () {
-      return {
-        message: 'Welcome!'
-      }
-    }
-  }
+export default {
+  name: 'app'
+}
 </script>
-
-<style lang="scss">
-  p {
-    font-size: 2em;
-    text-align: center;
-  }
-</style>
