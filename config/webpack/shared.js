@@ -32,7 +32,18 @@ module.exports = {
   },
 
   module: {
-    rules: sync(join(loadersDir, '*.js')).map(loader => require(loader))
+    rules: [
+      {
+        test: /\.(js|vue)$/,
+        loader: 'eslint-loader',
+        enforce: 'pre',
+        include: resolve('app/javascript'),
+        options: {
+          formatter: require('eslint-friendly-formatter')
+        }
+      },
+      ...sync(join(loadersDir, '*.js')).map(loader => require(loader))
+    ]
   },
 
   plugins: [
