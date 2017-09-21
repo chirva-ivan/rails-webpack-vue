@@ -47,8 +47,7 @@ module.exports = {
   resolve: {
     extensions: settings.extensions,
     alias: {
-      'vue$': 'vue/dist/vue.esm.js',
-      styles: 'app/javascript/styles'
+      'vue$': 'vue/dist/vue.esm.js'
     },
     modules: [
       resolve(settings.source_path),
