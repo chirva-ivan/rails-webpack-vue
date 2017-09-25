@@ -1,10 +1,8 @@
 import Vue from 'vue'
-import VueRouter from 'vue-router'
-
 import App from '../components/app.vue'
 import router from '../router'
-
-Vue.use(VueRouter)
+import store from '../store'
+import '../styles/application'
 
 document.addEventListener('DOMContentLoaded', () => {
   document.body.appendChild(document.createElement('app'))
@@ -12,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   new Vue({
     el: 'app',
     router,
+    store,
     template: '<App/>',
     components: { App }
   })
