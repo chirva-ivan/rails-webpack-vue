@@ -23,6 +23,9 @@ end
 newenv  = { "NODE_PATH" => NODE_MODULES_PATH.shellescape }
 cmdline = ["yarn", "run", "webpack", "--", "--config", WEBPACK_CONFIG] + ARGV
 
+# clearing public output
+`rm -rf #{APP_PATH}/public/packs`
+
 Dir.chdir(APP_PATH) do
   exec newenv, *cmdline
 end
