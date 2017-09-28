@@ -17,7 +17,10 @@ module.exports = {
     'html'
   ],
   // add your custom rules here
-  'rules': {
+  rules: {
+    // TODO: perhaps not necessary
+    // allow semicolons
+    "semi": [2, "always"],
     // allow paren-less arrow functions
     'arrow-parens': 0,
     // allow async-await

@@ -7,9 +7,9 @@ export default {
   data () {
     return {
       message: 'Home!'
-    }
+    };
   }
-}
+};
 </script>
 
 <style lang="scss">

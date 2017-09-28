@@ -1,8 +1,8 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../components/home'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import Home from '../components/home';
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 export default new VueRouter({
   mode: 'history',
@@ -14,4 +14,4 @@ export default new VueRouter({
       component: Home
     }
   ]
-})
+});
